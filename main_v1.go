@@ -78,4 +78,3 @@ func main() {
 	mf.AddNum(3)
 	fmt.Println(mf.FindMedian())
 }
-
