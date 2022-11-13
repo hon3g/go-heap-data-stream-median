@@ -11,14 +11,9 @@ type MedianFinder struct {
 }
 
 func Constructor() MedianFinder {
-	minH := Heap{}
-	heap.Init(&minH)
-	maxH := Heap{}
-	heap.Init(&maxH)
-
 	return MedianFinder{
-		minH: &minH,
-		maxH: &maxH,
+		minH: new(Heap),
+		maxH: new(Heap),
 	}
 }
 
